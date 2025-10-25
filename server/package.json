@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --watch \"src/**/*.ts\" --exec \"npx ts-node src/app.ts\"",
+    "dev": "nodemon --watch \"./*.ts\" --exec \"npx ts-node app.ts\"",
     "build": "tsc",
     "start": "node dist/app.js"
   },
@@ -13,7 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongo": "^0.1.0",
+    "mongoose": "^8.19.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
